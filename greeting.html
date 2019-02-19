@@ -25,6 +25,21 @@
       ReactDOM.render(
         <Greeting />, document.getElementById('app')
       );
+
+      class HelloMessage extends React.Component {
+        render() {
+          return (
+            <div>
+              Hello {this.prop.name}
+            </div>
+          );
+        }
+      }
+
+      ReactDOM.render(
+        <HelloMessaage name="Michael" />,
+        document.getElementById('hello-example');
+      )
       </script>
   </body>
 
