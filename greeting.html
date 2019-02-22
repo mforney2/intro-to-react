@@ -12,21 +12,29 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
 
     <script type="text/babel">
-      class Greeting extends React.Component P{
-        render() {
-          return (
-            <div>
-              <h1>Hello World!</h1>
-              <h1>Hello {this.props.name}!</h1>
-            </div>
-              );
-        }
-      }
 
-      ReactDOM.render(
-        <Greeting />, document.getElementById('app')
-        <greeting name="Bloc Student"/>, document.getElementById('app')
+    class Greeting {
+      constructor(props)
+      super(props);
+
+      this.state = {
+        number = 2;
+      }
+    }
+
+   render () {
+    return(
+      <div>
+        <h1>Hello { this.prop.name }!</h1>
+        <h2>You are on module: { this.state.number }</h2>
+      </div>
       );
+    }
+
+    ReactDOM.render(
+      <Greeting name ="Michael" />
+      document.getElementById('app');
+    )
       </script>
   </body>
 
